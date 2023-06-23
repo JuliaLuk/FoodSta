@@ -87,6 +87,13 @@ img {
   font-size: 14px;
   line-height: 1.17;
 }
+.header-item:hover,
+.header-item:focus {
+  font-weight: 700;
+  color: var(--cl-green-main);
+  text-decoration: underline;
+}
+
 .accent-item {
   font-weight: 700;
   color: var(--cl-green-main);
@@ -239,15 +246,22 @@ img {
 .subscribe-text {
 }
 .subscribe-form {
-  font-size: 12px;
-  color: var(--cl-gray-main);
   border-radius: 30px;
   border: 1px;
   border-style: solid;
   background-color: var(--bg-white-main);
   border-color: var(--bg-yellow-main);
 }
+.subscribe-input {
+  font-size: 12px;
+  color: var(--cl-gray-main);
+}
 .subscribe-btn {
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--cl-black-main);
+  background-color: var(--bg-green-main);
+  border-radius: 30px;
 }
 .subscribe-img {
 }
@@ -265,22 +279,51 @@ img {
 .footer-nav {
 }
 .footer-nav-item {
+  font-size: 14px;
+  line-height: 1.17;
 }
 .footer-subscribe {
+  font-weight: 500;
+  font-size: 14px;
 }
 .footer-form {
+  border-radius: 30px;
+  border: 1px;
+  border-style: solid;
+  background-color: var(--bg-white-main);
+  border-color: var(--bg-yellow-main);
+}
+.footer-input {
+  font-size: 12px;
+  color: var(--cl-gray-main);
 }
 .footer-btn {
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--cl-black-main);
+  background-color: var(--bg-white-main);
+  border-radius: 30px;
+  border: 2px;
+  border-color: var(--bg-green-second);
+  border-style: solid;
 }
 .footer-text {
+  font-size: 16px;
+  line-height: 1.17;
 }
 .footer-link-policy {
+  color: var(--cl-green-second);
 }
 .footer-rights {
 }
 .footer-rights-item {
+  font-size: 16px;
+  line-height: 1.17;
+  color: var(--cl-green-second);
 }
 .footer-rights-link {
 }
 .footer-allright-text {
+  font-size: 12px;
+  line-height: 1.17;
 }
