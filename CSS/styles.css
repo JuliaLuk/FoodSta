@@ -1,0 +1,189 @@
+/**
+  |============================
+  | common styles
+  |============================
+*/
+:root {
+  /* bg */
+  --black-main-bg: #2c2c2c;
+  --white-main-bg: #ffffff;
+  --gray-main-bg: #505050;
+  --yellow-main-bg: #ffe550;
+  --green-main-bg: #bbf330;
+  --green-second-bg: #7eb101;
+  /* text */
+  --black-main-cl: #2c2c2c;
+  --white-main-cl: #ffffff;
+  --gray-main-cl: #505050;
+  --yellow-main-cl: #ffe550;
+  --green-main-cl: #bbf330;
+  --green-second-cl: #7eb101;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--black-main-cl);
+}
+
+a {
+  text-decoration: none;
+}
+
+/**
+  |============================
+  | header styles
+  |============================
+*/
+
+.header {
+}
+.header-lodo {
+}
+.header-img {
+}
+.header-nav {
+}
+.header-list {
+}
+.header-item {
+}
+.header-link {
+}
+.header-btn {
+}
+/**
+  |============================
+  | hero styles
+  |============================
+*/
+
+.hero {
+}
+.hero-title {
+}
+.hero-test {
+}
+.hero-btn {
+}
+.hero-img {
+}
+
+/**
+  |============================
+  | Offerings styles
+  |============================
+*/
+
+.offerings {
+}
+.offerings-img {
+}
+.offerings-title {
+}
+.offerings-text {
+}
+.offerings-list {
+}
+.offerings-item {
+}
+.offerings-second-title {
+}
+.offerings-second-text {
+}
+.offerings-btn {
+}
+
+/**
+  |============================
+  | Favorites styles
+  |============================
+*/
+
+.favorites {
+}
+.favorites-title {
+}
+.favorites-text {
+}
+.favorites-list {
+}
+.favorites-item {
+}
+.favorites-img {
+}
+/**
+  |============================
+  | Customers styles
+  |============================
+*/
+
+.customers {
+}
+.customers-title {
+}
+.customers-text {
+}
+.customers-list {
+}
+.customers-item {
+}
+.customers-img {
+}
+.customers-second-title {
+}
+.customers-second-text {
+}
+/**
+  |============================
+  | Subscribe style
+  |============================
+*/
+
+.subscribe {
+}
+.subscribe-title {
+}
+.subscribe-text {
+}
+.subscribe-form {
+}
+.subscribe-btn {
+}
+.subscribe-img {
+}
+/**
+  |============================
+  | footer styles
+  |============================
+*/
+.footer {
+}
+.footer-logo {
+}
+.footer-img {
+}
+.footer-nav {
+}
+.footer-nav-item {
+}
+.footer-subscribe {
+}
+.footer-form {
+}
+.footer-btn {
+}
+.footer-text {
+}
+.footer-link-policy {
+}
+.footer-rights {
+}
+.footer-rights-item {
+}
+.footer-rights-link {
+}
+.footer-allright-text {
+}
