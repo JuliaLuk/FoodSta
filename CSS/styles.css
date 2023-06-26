@@ -9,6 +9,7 @@
   --bg-white-main: #ffffff;
   --bg-gray-main: #505050;
   --bg-yellow-main: #ffe550;
+  --bg-yellow-second: #ffe450;
   --bg-green-main: #bbf330;
   --bg-green-second: #7eb101;
   /* text */
@@ -16,16 +17,16 @@
   --cl-white-main: #ffffff;
   --cl-gray-main: #505050;
   --cl-yellow-main: #ffe550;
+  --cl-yellow-second: #ffe450;
   --cl-green-main: #bbf330;
   --cl-green-second: #7eb101;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  color: var(--cl-black-main);
   font-size: 16px;
   line-height: 1.5;
-  color: var(--cl-black-main);
 }
 
 /**
@@ -40,15 +41,13 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 ul,
 ol {
   list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   padding-left: 0;
 }
 
@@ -61,10 +60,17 @@ button {
   font-family: inherit;
   font-weight: inherit;
   cursor: pointer;
+  border: none;
 }
 img {
   display: block;
   max-width: 100%;
+  height: auto;
+}
+.container {
+  width: 1280px;
+  padding: 0 16px;
+  margin: 0 auto;
 }
 
 /**
@@ -75,23 +81,26 @@ img {
 
 .header {
 }
+.header-container {
+  display: flex;
+  align-items: center;
+}
 .header-lodo {
+  margin-right: auto;
 }
 .header-img {
 }
 .header-nav {
+  margin-right: 30px;
 }
 .header-list {
+  display: flex;
+  gap: 28px;
+  padding: 28px 0;
 }
 .header-item {
   font-size: 14px;
   line-height: 1.17;
-}
-.header-item:hover,
-.header-item:focus {
-  font-weight: 700;
-  color: var(--cl-green-main);
-  text-decoration: underline;
 }
 
 .accent-item {
@@ -100,12 +109,27 @@ img {
 }
 .header-link {
 }
+
+.header-link:hover,
+.header-link:focus {
+  font-weight: 700;
+  color: var(--cl-green-main);
+  text-decoration: underline;
+}
 .header-btn {
+  font-family: inherit;
+  line-height: inherit;
   font-weight: 500;
   font-size: 13px;
   color: var(--cl-black-main);
   background-color: var(--bg-green-main);
   border-radius: 30px;
+  padding: 6px 18px;
+}
+
+.header-btn:hover,
+.header-btn:focus {
+  background-color: var(--bg-yellow-second);
 }
 /**
   |============================
