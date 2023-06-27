@@ -139,19 +139,36 @@ img {
 
 .hero {
 }
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 14px;
+  padding-bottom: 30px;
+}
 .hero-title {
+  width: 502px;
+  height: 116px;
   font-weight: 700;
   font-size: 48px;
   line-height: 1.2;
+  margin-top: 159px;
+  margin-bottom: 28px;
 }
 .hero-test {
+  width: 511px;
+  height: 69px;
+  margin-bottom: 40px;
 }
 .hero-btn {
+  width: 98px;
+  height: 32px;
   font-weight: 500;
   font-size: 13px;
   color: var(--cl-black-main);
   background-color: var(--bg-green-main);
   border-radius: 30px;
+  margin-bottom: 180px;
 }
 .hero-img {
 }
