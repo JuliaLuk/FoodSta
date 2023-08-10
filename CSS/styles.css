@@ -422,6 +422,10 @@ img {
 .footer-container {
   padding-top: 100px;
   padding-bottom: 100px;
+  background-image: url(../images/footer/bg-footer-image.png);
+  background-repeat: no-repeat;
+  background-size: 1211px 266px;
+  background-position: 53px 129px;
 }
 
 .footer-wrapper {
