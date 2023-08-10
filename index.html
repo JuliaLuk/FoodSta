@@ -203,14 +203,18 @@
       </section>
       <!-- Subscribe -->
       <section class="section subscribe">
-        <div class="container">
-          <h2 class="subscribe-title">Subscribe To Get Special Offers</h2>
-          <p class="subscribe-text">
-            Order now and receive 10% off your first meal with Enjoy Your Favorite
-            Food From Anywhere.
-          </p>
-          <form class="subscribe-form"><input class="subscribe-input" placeholder="Enter your email" type="text" /></form>
-          <button class="subscribe-btn" type="submit">Subscribe</button>
+        <div class="container subscribe-container">
+          <div class="subscribe-wrapper">
+            <h2 class="subscribe-title">Subscribe To Get Special Offers</h2>
+            <p class="subscribe-text">
+              Order now and receive 10% off your first meal with Enjoy Your Favorite
+              Food From Anywhere.
+            </p>
+            <div class="subscribe-active">
+              <form class="subscribe-form"><input class="subscribe-input" placeholder="Enter your email" type="text" /></form>
+              <button class="subscribe-btn" type="submit">Subscribe</button>
+            </div>
+          </div>
           <img class="subscribe-img"
             src="./images/Subscribe/banan.jpg"
             alt="banan"
@@ -221,32 +225,44 @@
       </section>
       <!-- footer -->
       <footer class="footer">
-        <div class="container">
-          <a class="footer-logo" href="./index.html"
-            ><img class="footer-img"
-              src="./images/logo.svg"
-              alt="logo FoodSta"
-              width="66"
-              height="52"
-          /></a>
-          <ul class="footer-nav">
-            <li class="footer-nav-item">Home</li>
-            <li class="footer-nav-item">About</li>
-            <li class="footer-nav-item">Service</li>
-            <li class="footer-nav-item">Menu</li>
-            <li class="footer-nav-item">Contact</li>
-          </ul>
-          <p class="footer-subscribe">Subscribe</p>
-          <form class="footer-form"><input class="footer-input" placeholder="Enter your email" type="text" /></form>
-          <button class="footer-btn" type="submit">Subscribe</button>
-          <p class="footer-text">By subscribing you agree to with our</p>
-          <a class="footer-link-policy" href="">Privacy Policy</a>
-          <ul class="footer-rights">
-            <li class="footer-rights-item"><a class="footer-rights-link" href="">Privacy Policy</a></li>
-            <li class="footer-rights-item"><a class="footer-rights-link" href="">Terms of Service</a></li>
-            <li class="footer-rights-item"><a class="footer-rights-link" href="">Cookies Settings</a</li>
-          </ul>
-          <p class="footer-allright-text">2022 FoodSta. All right reserved.</p>
+        <div class="container footer-container">
+          <div class="footer-wrapper">
+            <div class="footer-nav-wrapper">
+              <a class="footer-logo" href="./index.html"
+                ><img class="footer-img"
+                  src="./images/logo.svg"
+                  alt="logo FoodSta"
+                  width="66"
+                  height="52"
+              /></a>
+              <ul class="footer-nav">
+                <li class="footer-nav-item">Home</li>
+                <li class="footer-nav-item">About</li>
+                <li class="footer-nav-item">Service</li>
+                <li class="footer-nav-item">Menu</li>
+                <li class="footer-nav-item">Contact</li>
+              </ul>
+            </div>
+            <div class="footer-sub-wrapper">
+              <p class="footer-subscribe">Subscribe</p>
+              <div class="footer-input-wrapper">
+                <form class="footer-form"><input class="footer-input" placeholder="Enter your email" type="text" /></form>
+              
+              <button class="footer-btn" type="submit">Subscribe</button></div>
+              <div class="footer-policy-wrapper">
+                <p class="footer-text">By subscribing you agree to with our</p>
+                <a class="footer-link-policy" href="">Privacy Policy</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-rights-wrapper">
+              <ul class="footer-rights">
+                <li class="footer-rights-item"><a class="footer-rights-link" href="">Privacy Policy</a></li>
+                <li class="footer-rights-item"><a class="footer-rights-link" href="">Terms of Service</a></li>
+                <li class="footer-rights-item"><a class="footer-rights-link" href="">Cookies Settings</a</li>
+              </ul>
+            <p class="footer-allright-text">2022 FoodSta. All right reserved.</p>
+          </div>
         </div>
       </footer>
     </main>
