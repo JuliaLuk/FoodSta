@@ -84,6 +84,7 @@ img {
 */
 
 .header {
+  box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.1);
 }
 .header-container {
   display: flex;
@@ -110,13 +111,14 @@ img {
 .accent-item {
   font-weight: 700;
   color: var(--cl-green-main);
+  text-decoration: underline;
 }
 .header-link {
 }
 
 .header-link:hover,
 .header-link:focus {
-  font-weight: 700;
+  font-weight: 400;
   color: var(--cl-green-main);
   text-decoration: underline;
 }
@@ -174,6 +176,12 @@ img {
   background-color: var(--bg-green-main);
   border-radius: 30px;
 }
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--bg-yellow-second);
+}
+
 .hero-img {
   border-radius: 580px;
   border: 26px solid var(--bg-yellow-main);
@@ -191,10 +199,11 @@ img {
 
 .offerings-container {
   display: flex;
-  justify-content: space-between;
-  padding-top: 177px;
+  gap: 90px;
+  padding-top: 113px;
   padding-bottom: 43px;
   margin: 0 auto;
+  gap: 90px;
 }
 .offerings-img {
 }
