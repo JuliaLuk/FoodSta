@@ -33,7 +33,7 @@
             <li class="header-item"><a class="header-link" href="">Contact</a></li>
           </ul>
         </nav>
-        <button class="header-btn" type="button">Order Now</button>
+        <button class="header-btn" type="button" data-modal-open>Order Now</button>
       </div>
     </header> 
     <main class="main">
@@ -48,17 +48,17 @@
             enjoy a hassle-free and delicious meal from the comfort of your own
             home.
           </p>
-          <button class="hero-btn" type="button">Order Now</button>
+          <button class="hero-btn" type="button" data-modal-open>Order Now</button>
           </div>
-          <div>
+          <div class="hero-img-wrapper">
             <svg class="hero-arrow-l" width="40" height="48">
               <use href="./images/icons/all-icons.svg#arrow-l"></use>
             </svg>
           <img class="hero-img"
             src="./images/Hero/hero1.jpg"
             alt="vege dish"
-            width="528"
-            height="528"
+            width="580"
+            height="580"
           />
           <svg class="hero-arrow-r" width="40" height="48">
             <use href="./images/icons/all-icons.svg#arrow-r"></use>
@@ -109,7 +109,7 @@
                 </p>
               </li>
             </ul>
-            <button class="offerings-btn" type="button">Order Now</button>
+            <button class="offerings-btn" type="button" data-modal-open>Order Now</button>
           </div>
         </div>
       </section>
@@ -126,6 +126,8 @@
                 width="315"
                 height="315"
               />
+            
+              
             </li>
             <li class="favorites-item">
               <img class="favorites-img"
@@ -134,7 +136,9 @@
                 width="315"
                 height="315"
               />
-            </li>
+   
+            </a>
+                   </li>
             <li class="favorites-item">
               <img class="favorites-img"
                 src="./images/Our Favorites/pizza.jpg"
@@ -142,7 +146,9 @@
                 width="315"
                 height="315"
               />
-            </li>
+   
+            </a>
+                   </li>
             <li class="favorites-item">
               <img class="favorites-img"
                 src="./images/Our Favorites/chicken.jpg"
@@ -150,6 +156,8 @@
                 width="315"
                 height="315"
               />
+            
+              
             </li>
             <li class="favorites-item">
               <img class="favorites-img"
@@ -158,6 +166,8 @@
                 width="315"
                 height="315"
               />
+            
+              
             </li>
             <li class="favorites-item">
               <img class="favorites-img"
@@ -166,6 +176,8 @@
                 width="315"
                 height="315"
               />
+            
+              
             </li>
           </ul>
         </div>
@@ -196,15 +208,15 @@
                   height="48"
                 />
                 <div class="customers-name">
-                  <h3 class="customers-second-title">Sumith Shah</h3>
-                  <p class="customers-second-text">Some Dude</p>
+                  <div class="customer-name-wrapper">
+                    <h3 class="customers-second-title">Sumith Shah</h3>
+                    <p class="customers-second-text">Some Dude</p>
+                  </div>
                   
                 </div>
-                <svg class="customers-name-icon" width="52" height="1">
-                    <use href="./images/icons/all-icons.svg#divider"></use>
-                  </svg>
               </div>
             </li>
+        
             <li class="customers-item">
               <svg class="customers-icon" width="101" height="16">
                 <use href="./images/icons/all-icons.svg#stars"></use>
@@ -222,13 +234,13 @@
                   height="48"
                 />
                 <div class="customers-name">
-                  <h3 class="customers-second-title">Sumith Shah</h3>
-                  <p class="customers-second-text">Some Dude</p>
+                  <div class="customer-name-wrapper">
+                    <h3 class="customers-second-title">Sumith Shah</h3>
+                    <p class="customers-second-text">Some Dude</p>
+                  </div>
                   
                 </div>
-                <svg class="customers-name-icon" width="52" height="1">
-                    <use href="./images/icons/all-icons.svg#divider"></use>
-                  </svg>
+                
               </div>
             </li>
           </ul>
@@ -298,7 +310,19 @@
           </div>
         </div>
       </footer>
+      <!-- Modal window -->
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="modal-btn" type="button" data-modal-close>
+            <svg class="modal-btn-icon" width="24" height="24">
+            <use href="./images/icons/all-icons.svg#cross"></use>
+          </svg>
+        </button>
+          
+        </div>
+      </div>
     </main>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
 
