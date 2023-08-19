@@ -694,4 +694,5 @@ img {
 }
 .modal-btn-icon {
   fill: var(--bg-black-main);
+  fill: #7eb101;
 }
