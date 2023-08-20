@@ -9,15 +9,18 @@
   --bg-white-main: #ffffff;
   --bg-white-second: #fefefe;
   --bg-gray-main: #505050;
+  --bg-gray-second: #c4c4c4;
   --bg-yellow-main: #ffe550;
   --bg-yellow-second: #ffe450;
   --bg-green-main: #bbf330;
   --bg-green-second: #7eb101;
+
   /* text */
   --cl-black-main: #2c2c2c;
   --cl-white-main: #ffffff;
   --cl-white-second: #fefefe;
   --cl-gray-main: #505050;
+  --cl-gray-second: #c4c4c4;
   --cl-yellow-main: #ffe550;
   --cl-yellow-second: #ffe450;
   --cl-green-main: #bbf330;
@@ -486,12 +489,22 @@ img {
   margin-right: 22px;
   display: flex;
   align-items: center;
+  transition: border 500ms ease;
+}
+
+.subscribe-form:focus,
+.subscribe-form:hover {
+  border-radius: 30px;
+  border: 1px solid var(--dark-green, #7eb101);
+  background: var(--white, #fefefe);
+  transition: background-color 500ms ease;
 }
 .subscribe-input {
   font-size: 12px;
   width: 326px;
   color: var(--cl-gray-main);
   border: none;
+  outline: transparent;
 }
 .subscribe-btn {
   padding: 11px 22px;
@@ -576,12 +589,21 @@ img {
   margin-right: 13px;
   display: flex;
   align-items: center;
+  transition: border 500ms ease;
 }
 .footer-input {
   width: 205px;
   font-size: 12px;
   color: var(--cl-gray-main);
   border: none;
+  outline: transparent;
+}
+
+.footer-form:focus,
+.footer-form:hover {
+  border-radius: 30px;
+  border: 1px solid var(--dark-green, #7eb101);
+  background: var(--white, #fefefe);
 }
 .footer-btn {
   height: 42px;
@@ -700,5 +722,58 @@ img {
 }
 
 .modal-form {
-  margin-top: 100px;
+  padding: 32px;
+}
+
+/**
+  |============================
+  | Form
+  |============================
+*/
+
+.form-caption {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form-wrapper {
+}
+.form-lable {
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 2px;
+  margin-left: 12px;
+}
+.form-input {
+  width: 394px;
+  height: 48px;
+  border-radius: 30px;
+  border: 1px solid rgba(18, 18, 18, 0.12);
+  background-color: var(--bg-white-main);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;
+  padding: 14px;
+  padding-left: 12px;
+  margin-bottom: 24px;
+  outline: transparent;
+}
+
+.form-input:focus,
+.form-input:hover {
+  border-radius: 30px;
+  border: 1.5px solid var(--bg-green-second);
+  background: var(--bg-white-second);
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+.form-input::placeholder {
+  color: var(--bg-gray-second);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25;
 }

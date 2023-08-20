@@ -304,7 +304,7 @@
               <ul class="footer-rights">
                 <li class="footer-rights-item"><a class="footer-rights-link" href="">Privacy Policy</a></li>
                 <li class="footer-rights-item"><a class="footer-rights-link" href="">Terms of Service</a></li>
-                <li class="footer-rights-item"><a class="footer-rights-link" href="">Cookies Settings</a</li>
+                <li class="footer-rights-item"><a class="footer-rights-link" href="">Cookies Settings</a></li>
               </ul>
             <p class="footer-allright-text">2022 FoodSta. All right reserved.</p>
           </div>
@@ -319,21 +319,76 @@
           </svg>
         </button>
 <!-- Form -->
-        <form class="modal-form" name="order_form" novalidate autocomplete="on">
-  <div>
-    <input type="text" required name="user_name">
-  </div>
-  <div>
-    <input type="password" required name="user_password">
-  </div>
-  
-  <div>
-    <input type="email" name="user_email id="">
+        <form class="modal-form" name="order_form" autocomplete="on">
+          <p class="form-caption">Order Form</p>
+  <div class="form-wrapper">
+    <label class="form-lable" for="user_name">Name</label>
+    <input class="form-input" type="text" required name="user_name" id="user_name" placeholder="Your name">
   </div>
 
-  <div>
-    <button type="submit">Send</button>
+  <div class="form-wrapper">
+    <label class="form-lable">Phone number<input class="form-input" type="tel" required name="user_phone" placeholder="+38(0_ _) _ _ _   _ _   _ _"></label>
   </div>
+    
+ <div class="form-wrapper">
+  <label class="form-lable">E-mail<input class="form-input" type="email" name="user_email" placeholder="example@gmail.com"></label>
+</div>
+
+<div class="form-wrapper">
+  <label class="form-lable">How many dishes you want:<input class="form-input" type="number" value="2" max="10" min="0" name="" id=""></label>
+</div>
+<div class="form-wrapper">
+  <label class="form-lable">When you want you dish:<input class="form-input" type="date"></label>
+</div>
+<div class="form-wrapper">
+  <label class="form-lable">At what time:<input class="form-input" type="time"></label>
+</div>
+
+<textarea name="massage" id="" cols="40" rows="5" placeholder="Leave your idea"></textarea>
+<div>
+  <select name="days" id="">
+  <option value="Pon">Pon</option>
+  <option value="Wt">Wt</option>
+  <option value="Sr">Sr</option>
+  <option value="Czw">Czw</option>
+  <option value="Pią">Pią</option>
+</select>
+</div>
+
+<div>
+ <input list="brousers">
+ <datalist id="brousers">
+  <option value="Pon">Pon</option>
+  <option value="Wt">Wt</option>
+  <option value="Sr">Sr</option>
+  <option value="Czw">Czw</option>
+  <option value="Pią">Pią</option>
+ </datalist>
+
+
+</div>
+
+
+
+<div>
+  <strong>Choose your dish:</strong>
+  <label for="">Fish<input type="radio" name="favorit_dishes" value="Fish" checked></label>
+  <label for="">Vegetables<input type="radio" name="favorit_dishes" value="Vegetables"></label>
+  <label for="">Pasta<input type="radio" name="favorit_dishes" value="Pasta" disabled></label>
+</div>
+
+<div>
+  <strong>Choose your dish:</strong>
+  <label for="">Fish<input type="checkbox" name="favorit_dishes" value="Fish" checked></label>
+  <label for="">Vegetables<input type="checkbox" name="favorit_dishes" value="Vegetables"></label>
+  <label for="">Pasta<input type="checkbox" name="favorit_dishes" value="Pasta" disabled></label>
+</div>
+  
+ 
+  
+    <button type="submit">Send</button>
+  
+  
 </form> 
         </div>
       </div>
