@@ -324,14 +324,26 @@
   <div class="form-wrapper">
     <label class="form-lable" for="user_name">Name</label>
     <input class="form-input" type="text" required minlength="3" maxlength="12" name="user_name" id="user_name" placeholder="Your name">
+    <svg class="error-icon" width="12" height="12">
+      <use href="./images/icons/all-icons.svg#error"></use>
+    </svg>
+    <p class="error-text">The name must be between 3 and 25 characters</p>
   </div>
 
   <div class="form-wrapper">
-    <label class="form-lable">Phone number<input class="form-input" type="tel" name="user_phone" placeholder="+38(0_ _) _ _ _   _ _   _ _"></label>
+    <label class="form-lable">Phone number<input class="form-input" type="tel" required name="user_phone" placeholder="099 000 00 00" minlength="3" maxlength="12"></label>
+    <svg class="error-icon" width="12" height="12">
+      <use href="./images/icons/all-icons.svg#error"></use>
+    </svg>
+    <p class="error-text">This phone must be in the format  099 000 00 00</p>
   </div>
     
  <div class="form-wrapper">
-  <label class="form-lable">E-mail<input class="form-input" type="email" required name="user_email" placeholder="example@gmail.com"></label>
+  <label class="form-lable">E-mail<input class="form-input" type="email" required name="user_email" placeholder="example@gmail.com" minlength="3"></label>
+  <svg class="error-icon" width="12" height="12">
+      <use href="./images/icons/all-icons.svg#error"></use>
+    </svg>
+    <p class="error-text">Please enter a valid email address</p>
 </div>
 
 <div class="form-wrapper">

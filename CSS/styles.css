@@ -14,6 +14,7 @@
   --bg-yellow-second: #ffe450;
   --bg-green-main: #bbf330;
   --bg-green-second: #7eb101;
+  --bg-error: #ff705d;
 
   /* text */
   --cl-black-main: #2c2c2c;
@@ -25,6 +26,7 @@
   --cl-yellow-second: #ffe450;
   --cl-green-main: #bbf330;
   --cl-green-second: #7eb101;
+  --cl-error: #ff705d;
 }
 
 body {
@@ -743,6 +745,7 @@ img {
 }
 .form-wrapper {
   width: 100%;
+  position: relative;
 }
 .form-lable {
   font-weight: 500;
@@ -759,30 +762,71 @@ img {
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;
   padding: 14px;
   padding-left: 12px;
-  margin-bottom: 24px;
   outline: transparent;
   color: var(--bg-black-main);
   line-height: 1.25;
 }
 
 .form-input:focus,
-/* .form-input:hover, */ ховери не ставиом бо вони збивають користувача
-.form-textarea:focus
-/* .form-textarea:hover  */ {
+.form-textarea:focus {
   border: 2px solid var(--bg-green-second);
   background: var(--bg-white-second);
-  transition: border 400ms, border-radius 400ms;
+  transition: border 400ms;
 }
 .form-input::placeholder {
   color: var(--bg-gray-second);
   font-style: normal;
   font-weight: 400;
   line-height: 1.25;
+  opacity: 0;
 }
 
-.form-input:in-range {
+.form-input:focus::placeholder {
+  opacity: 1;
+  transition: opacity 500ms;
 }
-.form-input:out-of-range {
+.form-input:not(:placeholder-shown):invalid:required {
+  border-radius: 30px;
+  border: 1px solid var(--bg-error);
+  background: var(--bg-white-main);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;
+}
+
+.form-input:not(:placeholder-shown):valid:required {
+  border-radius: 30px;
+  border: 1px solid --bg-green-main;
+  background: var(--bg-white-main);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;
+  position: relative;
+}
+
+.error-icon {
+  position: absolute;
+  display: block;
+  top: 73px;
+  left: 13px;
+  stroke: var(--bg-error);
+  fill: none;
+  opacity: 0;
+}
+
+.error-text {
+  color: var(--cl-error);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-left: 28px;
+  margin-bottom: 6px;
+  opacity: 0;
+}
+
+.form-input:not(:placeholder-shown):invalid:required ~ .error-icon {
+  opacity: 1;
+}
+
+.form-input:not(:placeholder-shown):invalid:required ~ .error-text {
+  opacity: 1;
 }
 
 .form-textarea {
@@ -812,6 +856,13 @@ img {
   border-style: solid;
   transition: background-color 700ms ease, border-color 700ms ease;
   margin-top: 32px;
+}
+
+.form-input:not(:placeholder-shown):invalid:required ~ .form-btn {
+  border-radius: 30px;
+  border: 2px solid var(--bg-error);
+  color: var(--cl-black-main);
+  background: var(--bg-white-main);
 }
 
 .form-btn:hover,
