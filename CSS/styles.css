@@ -842,7 +842,13 @@ img {
 .form-textarea::placeholder {
   color: var(--bg-gray-second);
 }
-
+/* .form-btn-eror {
+  border-radius: 30px;
+  border: 2px solid var(--bg-error);
+  color: var(--cl-black-main);
+  background: var(--bg-white-main);
+  opacity: 0;
+} */
 .form-btn {
   width: 106px;
   height: 40px;
@@ -856,13 +862,6 @@ img {
   border-style: solid;
   transition: background-color 700ms ease, border-color 700ms ease;
   margin-top: 32px;
-}
-
-.form-input:not(:placeholder-shown):invalid:required ~ .form-btn {
-  border-radius: 30px;
-  border: 2px solid var(--bg-error);
-  color: var(--cl-black-main);
-  background: var(--bg-white-main);
 }
 
 .form-btn:hover,

@@ -331,7 +331,8 @@
   </div>
 
   <div class="form-wrapper">
-    <label class="form-lable">Phone number<input class="form-input" type="tel" required name="user_phone" placeholder="099 000 00 00" minlength="3" maxlength="12"></label>
+    <label class="form-lable" for="user_phone">Phone number</label>
+    <input class="form-input" type="tel" id="user_phone" required name="user_phone" placeholder="099 000 00 00" minlength="3" maxlength="12">
     <svg class="error-icon" width="12" height="12">
       <use href="./images/icons/all-icons.svg#error"></use>
     </svg>
@@ -339,13 +340,14 @@
   </div>
     
  <div class="form-wrapper">
-  <label class="form-lable">E-mail<input class="form-input" type="email" required name="user_email" placeholder="example@gmail.com" minlength="3"></label>
+  <label class="form-lable" for="use_mail">E-mail</label>
+  <input class="form-input" type="email" id="user_email" required name="user_email" placeholder="example@gmail.com" minlength="3">
   <svg class="error-icon" width="12" height="12">
       <use href="./images/icons/all-icons.svg#error"></use>
     </svg>
     <p class="error-text">Please enter a valid email address</p>
 </div>
-
+<!-- 
 <div class="form-wrapper">
   <label class="form-lable">How many dishes you want:<input class="form-input" type="number" value="2" max="10" min="0" name="" id=""></label>
 </div>
@@ -396,7 +398,7 @@
   <label for="">Pasta<input type="checkbox" name="favorit_dishes" value="Pasta" disabled></label>
 </div>
   
- 
+  -->
   
     <button class="form-btn" type="submit" >Send</button>
   
