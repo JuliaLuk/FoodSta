@@ -12,6 +12,10 @@
 <!-- modern-normalize  -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
 <!-- custom styles -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="./CSS/styles.css">
   </head>
   <body class="body">
@@ -310,6 +314,31 @@
           </div>
         </div>
       </footer>
+
+      <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="./images/Hero/hero-1@1x.jpg" 1x,
+      srcset="./images/Hero/hero-1@2x.jpg" 2x width="528" height="528" alt="pulpety"></div>
+    <div class="swiper-slide"><img src="./images/Hero/hero-2@1x.jpg" 1x,
+      srcset="./images/Hero/hero-2@2x.jpg" 2x width="528" height="528" alt="salat"></div>
+    <div class="swiper-slide"><img src="./images/Hero/hero-3@1x.jpg" 1x,
+      srcset="./images/Hero/hero-3@2x.jpg" 2x width="528" height="528" alt="jajko"></div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
       <!-- Modal window -->
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -408,6 +437,8 @@
       </div>
     </main>
     <script src="./js/modal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
 
